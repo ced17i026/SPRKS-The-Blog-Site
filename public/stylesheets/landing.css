@@ -1,0 +1,17 @@
+/* HEADER STYLING */
+/* ****************************************************************** */
+
+.header{
+    background-color: #212d33;
+    color: white;
+    height: 78px;
+    text-align: center;
+    margin: 0px -15px;
+    padding: 5px;
+}
+
+.seperator{
+    height: 3px;
+    background-color: #8ffcf5;
+    margin: 0px -15px;
+}
