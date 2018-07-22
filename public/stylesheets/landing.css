@@ -15,3 +15,7 @@
     background-color: #8ffcf5;
     margin: 0px -15px;
 }
+
+.trendingBlogs,.blahBlogs,.recentBlogs{
+    border: 2px solid blue;
+}
