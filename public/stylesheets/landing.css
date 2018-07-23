@@ -35,4 +35,13 @@
 
 .trendingBlogs,.blahBlogs,.recentBlogs{
     border: 2px solid blue;
+    padding: 0;
+}
+/* you can change the color i'm just adding the simple colors */
+.trendingBlogHeader,.recentBlogHeader,.blahBlogHeader{
+    background-color: #212d33;
+    color: white;
+    padding-top: 3px;
+    height: 40px;
+    text-align: center;
 }
