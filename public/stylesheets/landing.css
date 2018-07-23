@@ -55,15 +55,14 @@
 /* ****************************************************************** */
 
 .trendingBlogs,.blahBlogs,.recentBlogs{
-    border: 2px solid blue;
-    padding: 0;
+    padding: 3px;
 }
 /* you can change the color i'm just adding the simple colors */
 .trendingBlogHeader,.recentBlogHeader,.blahBlogHeader{
     background-color: #212d33;
     color: white;
     padding-top: 3px;
-    height: 40px;
+    height: 30px;
     text-align: center;
 }
 /* This will only move the content while scroll 
@@ -73,4 +72,10 @@ media query for height in mobile */
 .trendingBlogsBody,.recentBlogsBody,.blahBlogsBody{
     height: 520px;
     overflow: scroll;
+}
+.container-fluid{
+    padding: 10px;
+}
+.signupFooter .ui{
+    margin-left: 37%;
 }
