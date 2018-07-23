@@ -45,3 +45,11 @@
     height: 40px;
     text-align: center;
 }
+/* This will only move the content while scroll 
+and will keep the heading part stationary and for now
+olny i kept the the size of box fixed or we can add 
+media query for height in mobile */
+.trendingBlogsBody,.recentBlogsBody,.blahBlogsBody{
+    height: 520px;
+    overflow: scroll;
+}
