@@ -19,7 +19,7 @@
 /* MENU BAR STYLING */
 /* ****************************************************************** */
 
-.menu-bar{
+.menuBar{
     text-transform: uppercase;
     display: flex;
     flex-direction: row;
@@ -28,11 +28,11 @@
     margin-bottom: 20px;
 }
 
-.type-container{
+.typeContainer{
     padding: 10px 30px;
 }
 
-.menu-header{
+.menuHeader{
     padding: 10px;
 }
 
@@ -46,7 +46,7 @@
     padding: 10px;
 }
 
-.menu-item{
+.menuItem{
     padding-top:5px;
     padding-bottom: 5px;
 }
@@ -59,7 +59,7 @@
 }
 /* you can change the color i'm just adding the simple colors */
 .trendingBlogHeader,.recentBlogHeader,.blahBlogHeader{
-    background-color: #d9ebf4;
+    background-color: #edf0f2;
     color:#212d33;
     padding-top: 3px;
     height: 30px;
@@ -71,11 +71,30 @@ olny i kept the the size of box fixed or we can add
 media query for height in mobile */
 .trendingBlogsBody,.recentBlogsBody,.blahBlogsBody{
     height: 520px;
-    overflow: scroll;
+    overflow-y: auto;
 }
 .container-fluid{
-    padding: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-bottom: 13px;
 }
 .signupFooter .ui{
-    margin-left: 37%;
+    margin-left: 36%;
+}
+.authorOfBlog{
+    width: 100%;
+}
+
+/* The styling here is only for hidding the scroll bar */
+.blahBlogsBody::-webkit-scrollbar {
+    width: 0px;  /* remove scrollbar space */
+    background: transparent;  /* optional: just make scrollbar invisible */
+}
+.trendingBlogsBody::-webkit-scrollbar {
+    width: 0px;  /* remove scrollbar space */
+    background: transparent;  /* optional: just make scrollbar invisible */
+}
+.recentBlogsBody::-webkit-scrollbar {
+    width: 0px;  /* remove scrollbar space */
+    background: transparent;  /* optional: just make scrollbar invisible */
 }
