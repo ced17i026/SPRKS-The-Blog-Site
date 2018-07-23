@@ -59,8 +59,8 @@
 }
 /* you can change the color i'm just adding the simple colors */
 .trendingBlogHeader,.recentBlogHeader,.blahBlogHeader{
-    background-color: #212d33;
-    color: white;
+    background-color: #d9ebf4;
+    color:#212d33;
     padding-top: 3px;
     height: 30px;
     text-align: center;
