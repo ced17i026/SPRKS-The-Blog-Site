@@ -88,15 +88,14 @@ a:hover{
     padding: 3px;
     width: 30%;
     margin: 1.5%;
-    border: 2px solid red;
     margin-top: 1%;
 }
 /* you can change the color i'm just adding the simple colors */
 .trendingBlogHeader,.recentBlogHeader,.blahBlogHeader{
     background-color: #edf0f2;
     color:#212d33;
-    padding-top: 3px;
-    height: 30px;
+    padding-top: 9px;
+    height: 40px;
     text-align: center;
 }
 /* This will only move the content while scroll 
@@ -106,6 +105,8 @@ media query for height in mobile */
 .trendingBlogsBody,.recentBlogsBody,.blahBlogsBody{
     height: 520px;
     overflow-y: auto;
+    padding-top: 2px;
+    padding-left: 3px;
 }
 .container-fluid{
     padding-left: 10px;
@@ -117,6 +118,9 @@ media query for height in mobile */
 }
 .authorOfBlog{
     width: 100%;
+}
+strong{
+    font-size: 20px;
 }
 
 /* The styling here is only for hidding the scroll bar */
