@@ -103,7 +103,7 @@ and will keep the heading part stationary and for now
 olny i kept the the size of box fixed or we can add 
 media query for height in mobile */
 .trendingBlogsBody,.recentBlogsBody,.blahBlogsBody{
-    height: 520px;
+    height: 510px;
     overflow-y: auto;
     padding-top: 2px;
     padding-left: 3px;
@@ -111,7 +111,7 @@ media query for height in mobile */
 .container-fluid{
     padding-left: 10px;
     padding-right: 10px;
-    padding-bottom: 13px;
+    padding-bottom: 0px;
 }
 .signupFooter .ui{
     margin-left: 36%;
