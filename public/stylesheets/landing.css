@@ -1,6 +1,7 @@
 /* HEADER STYLING */
 /* ****************************************************************** */
-
+/* This sets the styling for the header container tag which include all other component like user action i.e.
+signin, signup etc */
 .header{
     background-color: #212d33;
     color: white;
@@ -10,10 +11,39 @@
     padding: 5px;
 }
 
+/* This is giving style to the seperator */
 .seperator{
     height: 3px;
     background-color: #8ffcf5;
     margin: 0px -15px;
+}
+
+
+/* for styling the brandName */
+.brandName{
+    padding-top:5px;
+}
+h2{
+    font-size: 40px;
+    color:white;
+}
+
+/* USER ACTION STYLING */
+/* ****************************************************************** */
+
+.login a, .signup a, .logout a{
+    padding: 5px;
+    font-size: 15px;
+    padding-top: 17px;
+    margin: 5px 0px 0px 0px; 
+    color:white;
+}
+.login:hover, .signup:hover, .logout:hover{
+    background-color: #8ffcf5;
+}
+
+a:hover{
+    color: #212d33;
 }
 
 /* MENU BAR STYLING */
