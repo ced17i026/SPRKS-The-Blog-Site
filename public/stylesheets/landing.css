@@ -88,6 +88,7 @@ a:hover{
 
 .menuHeader{
     padding: 10px;
+    font-size: 17px;
 }
 
 .hidden{
@@ -95,9 +96,10 @@ a:hover{
 }
 
 .unhidden{
-    width: 10%;
+    width: 13%;
     text-align: center;
     padding: 10px;
+    margin-left: -30px;
     display: inline-block;
     position: absolute;
     z-index: 1;
@@ -106,8 +108,9 @@ a:hover{
 }
 
 .menuItem{
-    padding-top:5px;
-    padding-bottom: 5px;
+    padding-top:7px;
+    padding-bottom: 7px;
+    color: #212d33;
 }
 
 /* BODY STYLING */

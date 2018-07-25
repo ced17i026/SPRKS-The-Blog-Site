@@ -9,6 +9,7 @@ var tech = document.getElementById("tech");
 var culture = document.getElementById("culture");
 var movies = document.getElementById("movies");
 var comics = document.getElementById("comics");
+
 $("#educationHeader").on("click", function(){
     console.log("clicked");
     education.classList.toggle("unhidden");
