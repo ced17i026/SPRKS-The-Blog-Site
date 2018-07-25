@@ -12,7 +12,7 @@ signin, signup etc */
 }
 
 .row{
-    margin: 12px;
+    margin: 0px 0px;
 }
 
 /* This is giving style to the seperator */
@@ -79,7 +79,7 @@ a:hover{
     flex-direction: row;
     justify-content: center;
     align-content: space-between;
-    margin-bottom: 20px;
+    margin-bottom: 0px;
 }
 
 .typeContainer{
@@ -118,10 +118,14 @@ a:hover{
 .trendingBlogHeader,.recentBlogHeader,.blahBlogHeader{
     background-color: #edf0f2;
     color:#212d33;
-    padding-top: 9px;
-    height: 40px;
+    padding-top: 19px;
+    height: 60px;
     text-align: center;
+    border-radius: 40px;
+    margin-bottom: 20px;
 }
+
+
 /* This will only move the content while scroll 
 and will keep the heading part stationary and for now
 olny i kept the the size of box fixed or we can add 
@@ -131,6 +135,7 @@ media query for height in mobile */
     overflow-y: auto;
     padding-top: 2px;
     padding-left: 3px;
+    padding: 15px;
 }
 .container-fluid{
     padding-left: 10px;
