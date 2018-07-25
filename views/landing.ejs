@@ -16,22 +16,24 @@
 <body>
     <div class="container-fluid">
         <!-- Add your header inside header class -->
-        <div class="header-container">
+        <div class="headerContainer">
             <div class="header"> <!-- color : #212d33-->
                 <div class="row">
                     <!-- Initially we are making for our desktop size so we will be using
                         col-xl- , Later we will be changing if required -->
-                    <div class="col-xl-9 brandName">
+                    <div class="col-lg-9 col-md-9 brandName">
                         <a href="#"><h2><span class="brand"># Brand Name</span></h2></a>
                     </div>
-                    <div class="col-xl-1 login">
-                        <a href="#"><p>Login</p></a>
-                    </div>
-                    <div class="col-xl-1 signup">
-                        <a href="#"><p>Sign Up</p></a>
-                    </div>
-                    <div class="col-xl-1 logout">
-                        <a href="#"><p>Logout</p></a>
+                    <div class="col-lg-3 col-md-3 userAuth">
+                        <div class="login">
+                            <a href="#"><p>Login  <i class="fas fa-user"></i></p></a>
+                        </div>
+                        <div class="signup">
+                            <a href="#"><p>Sign Up  <i class="fas fa-user-plus"></i></p></a>
+                        </div>
+                        <div class="logout">
+                            <a href="#"><p>Logout   <i class="fas fa-user-minus"></i></p></a>
+                        </div>
                     </div>
                 </div>
             </div>

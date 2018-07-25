@@ -11,6 +11,10 @@ signin, signup etc */
     padding: 5px;
 }
 
+.row{
+    margin: 12px;
+}
+
 /* This is giving style to the seperator */
 .seperator{
     height: 3px;
@@ -31,20 +35,40 @@ h2{
 /* USER ACTION STYLING */
 /* ****************************************************************** */
 
-.login a, .signup a, .logout a{
-    padding: 5px;
-    font-size: 15px;
-    padding-top: 17px;
-    margin: 5px 0px 0px 0px; 
-    color:white;
+.userAuth{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-content: stretch;
+    align-items: center;
 }
-.login:hover, .signup:hover, .logout:hover{
+
+.login, .signup, .logout {
+    flex-grow: 1;
+    height:100%;
+    flex-basis: 100px;
+    margin-bottom: -10px;
+    align-self: center;
+    font-size: 20px;
+}
+
+.userAuth p{
+    height: 100%;
+    padding-top: 10px;
+    color: white;
+}
+
+.login p:hover, .signup p:hover, .logout p:hover{
     background-color: #8ffcf5;
+    color: #212d33;
+    transition-duration: 10ms;
 }
+
 
 a:hover{
     color: #212d33;
 }
+/* @keyframes ANIMATIONS GOES HERE */
 
 /* MENU BAR STYLING */
 /* ****************************************************************** */
