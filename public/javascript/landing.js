@@ -41,9 +41,3 @@ $("#comicsHeader").on("click", function(){
     console.log("clicked");
     comics.classList.toggle("unhidden");
 });
-
-/* var menu = $(".menuItem");
-menu.on("click", function(){
-    this.toggleClass("unhidden");
-    console.log(this);
-}); */
