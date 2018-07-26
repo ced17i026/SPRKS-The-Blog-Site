@@ -6,7 +6,7 @@
 /* This will be changing the opacity of the page when item on menu bar gets clicked */
 .onMenuClickBodyOpacity{
     animation-name: faddingEffect;
-    animation-duration: 1s;
+    animation-duration: 0.2s;
     animation-timing-function: linear;
     animation-fill-mode: forwards;
 }
@@ -23,8 +23,8 @@
 
 .whenAnyMenuItemClicked{
     animation-name: menuBodyHeightChange;
-    animation-duration: 0.4s;
-    animation-timing-function: ease-in-out;
+    animation-duration: 0.2s;
+    animation-timing-function: linear;
     overflow: hidden;
 }
 /* Menu Styling ends here */
