@@ -1,3 +1,22 @@
+/* BODY STYLING */
+/* ***************************************************************** */
+/* This will be changing the opacity of the page when item on menu bar gets clicked */
+.onMenuClickBodyOpacity{
+    animation-name: faddingEffect;
+    animation-duration: 1s;
+    animation-timing-function: linear;
+    animation-fill-mode: forwards;
+}
+
+/* This will be changing the opacity of the menuItem when item on menu bar gets clicked */
+.onMenuItemClicked{
+    animation-name: textColorChange;
+    animation-duration: 1s;
+    animation-timing-function: linear;
+    animation-fill-mode: forwards;
+}
+
+
 /* HEADER STYLING */
 /* ****************************************************************** */
 /* This sets the styling for the header container tag which include all other component like user action i.e.
@@ -61,14 +80,12 @@ h2{
 .login p:hover, .signup p:hover, .logout p:hover{
     background-color: #8ffcf5;
     color: #212d33;
-    transition-duration: 10ms;
 }
 
 
 a:hover{
     color: #212d33;
 }
-/* @keyframes ANIMATIONS GOES HERE */
 
 /* MENU BAR STYLING */
 /* ****************************************************************** */
@@ -110,7 +127,13 @@ a:hover{
 .menuItem{
     padding-top:7px;
     padding-bottom: 7px;
-    color: #212d33;
+}
+
+.menuItem:hover{
+    animation-name: itemColorChange;
+    animation-timing-function: linear;
+    animation-duration: 2s;
+    animation-fill-mode: forwards;
 }
 
 /* BODY STYLING */
@@ -172,4 +195,42 @@ strong{
 .recentBlogsBody::-webkit-scrollbar {
     width: 0px;  /* remove scrollbar space */
     background: transparent;  /* optional: just make scrollbar invisible */
+}
+
+/* @keyframes ANIMATIONS GOES HERE */
+/* *************************************************************** */
+/* This will be changing the color of the text on hower swiftly */
+@keyframes itemColorChange{
+    0%{
+        color: inherit;
+    }
+    100%{
+        color: #212d33;
+    }
+}
+
+/* Text color change animation for the  header */
+@keyframes textColorChange{
+    0%{
+        color: inherit;
+        background-color: white;
+        opacity: 1;
+    }
+    100%{
+        color: #212d33;
+        background-color: #8ffcf5;
+        opacity: 0.7;
+    }
+}
+
+/* This will be adding the transition effect to the hidden menu */
+
+/* This is for the blog part of the webpage onMenuClickBodyOpacity*/
+@keyframes faddingEffect{
+    0% {
+        opacity:1;
+    }
+    100% {
+        opacity: 0.5;
+    }
 }

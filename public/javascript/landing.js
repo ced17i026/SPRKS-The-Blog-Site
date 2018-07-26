@@ -1,6 +1,6 @@
 // HEADER LOGIC
 // ===============================================================
-
+var bodyContainer = document.getElementById("bodyContainer");
 var education = document.getElementById("education");
 var developer = document.getElementById("developer");
 var sports= document.getElementById("sports");
@@ -13,6 +13,7 @@ var comics = document.getElementById("comics");
 $("#educationHeader").on("click", function(){
     console.log("clicked");
     education.classList.toggle("unhidden");
+    bodyContainer.classList.toggle("onMenuClickBodyOpacity");
 });
 $("#developerHeader").on("click", function(){
     console.log("clicked");
