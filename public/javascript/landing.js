@@ -13,6 +13,7 @@ var comics = document.getElementById("comics");
 $("#educationHeader").on("click", function(){
     console.log("clicked");
     education.classList.toggle("unhidden");
+    education.classList.toggle("whenAnyMenuItemClicked");
     bodyContainer.classList.toggle("onMenuClickBodyOpacity");
 });
 $("#developerHeader").on("click", function(){
