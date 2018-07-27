@@ -36,6 +36,11 @@ app.get("/", function(req,res){
     res.render("landing.ejs");
     
 });
+//getting the signup page route
+app.get("/signup", function(req,res)
+{
+    res.render("signup");
+})
 
 // =======================
 //     LOCAL HOST
