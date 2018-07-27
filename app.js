@@ -23,11 +23,14 @@ var connection = mysql.createConnection({
 // =======================
 
 app.get("/", function(req,res){
-    var q = 'SELECT 4*5';
+    var q = 'select first_name,last_name,posts from users inner join posts on users.id = posts.user_id;';
     connection.query(q, function (error, results) {
-    if (error) throw error;
-    var msg = "We have " + results[0] + " users";
-    console.log(msg);
+    if (error){ 
+        throw error;
+        
+    }
+    var blogPost = "We have " + results[19].posts + " users";
+    console.log(blogPost);
     });
     connection.end();
     res.render("landing.ejs");
