@@ -4,13 +4,30 @@
 
 var express = require("express"),
     mysql   = require("mysql"),
+    mongoose = require("mongoose"),
     bodyParser = require("body-parser"),
     faker   = require("faker"),
+    passport = require("passport"),
+    passportLocal = require("passport-local"),
+    passportLocalMongoose = require("passport-local-mongoose"),
+    user = require("./public/databaseFiles/userauth"),
     app     = express();
-
+    app.use(express.static(__dirname + "/public"));
+    mongoose.connect("mongodb://localhost/userauths");
+//configuration for all the requires starts here
 app.use(bodyParser.urlencoded({extended: true}));
 app.set("view engine", "ejs");
-app.use(express.static(__dirname + "/public"));
+app.use(require("express-session")({
+    secret: "This is an simple blog app",
+    resave: false,
+    saveUninitialized: false
+}));
+//configuring passport
+app.use(passport.initialize());
+app.use(passport.session());
+passport.use(new passportLocal(user.authenticate()));
+passport.serializeUser(user.serializeUser());
+passport.deserializeUser(user.deserializeUser());
 
 // Here we will be creating the connection of mySQL with
 // the Node.js
@@ -51,7 +68,6 @@ app.get("/signup", function(req,res)
 // logic for handling the user Signup
 app.post("/signup", function(req, res){
     console.log(req.body);
-    console.log(md5(req.body.password));
     res.render("show");
 });
 
