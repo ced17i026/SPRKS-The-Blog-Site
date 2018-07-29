@@ -24,17 +24,16 @@ var connection = mysql.createConnection({
 
 app.get("/", function(req,res){
     var q = 'select first_name,last_name,posts from users inner join posts on users.id = posts.user_id;';
-    connection.query(q, function (error, results) {
-    if (error){ 
-        throw error;
-        
-    }
-    var blogPost = "We have " + results[19].posts + " users";
-    console.log(blogPost);
-    });
-    connection.end();
-    res.render("landing.ejs");
+    connection.query(q, function (error, blog) {
+    if (error) throw error;
+    var userName = blog[0].first_name;
+    var blogContent = blog[0].posts;
+    console.log(userName);
+    console.log(blogContent);
+    res.render("landing.ejs",{blog: blogContent, user: userName});
     
+    connection.end();
+    });
 });
 //getting the signup page route
 app.get("/signup", function(req,res)
