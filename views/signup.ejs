@@ -1,20 +1,12 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <!--jqury cdn is here-->
-    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
-    <!--Adding semantic for future use if we want to use it-->
-    <link rel="stylesheet" href ="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.3.3/semantic.min.css">
-    <!--fontAwesome goes here-->
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.1/css/all.css">
+    <title>Sperks : Join Our Community</title>
     <!-- External css goes here -->
     <link rel="stylesheet" href="stylesheets/signup.css">
 </head>
 <body>
+  <% include partials/header.ejs %>
     <div class="container"> 
      <form method="POST" action="/signup" class="ui form">
           <h2 class="ui dividing header">Sign Up</h2>
@@ -32,7 +24,7 @@
           <div class="field">
             <label for="email">Email</label>
             <div class="field">
-                <input type="email" name="email" placeholder="Email" id="email">
+                <input type="email" name="username" placeholder="Email" id="email">
             </div>
           </div>
           <div class="field">

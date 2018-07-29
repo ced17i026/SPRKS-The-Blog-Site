@@ -12,7 +12,7 @@
     <!--fontAwesome goes here-->
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.1/css/all.css">
     <!-- External css goes here -->
-    <link rel="stylesheet" href="stylesheets/landing.css">
+    <link rel="stylesheet" href="/stylesheets/landing.css">
     <title>Homepage</title>
 </head>
 <body>
@@ -23,15 +23,12 @@
                 <div class="row">
                     <!-- Initially we are making for our desktop size so we will be using
                         col-xl- , Later we will be changing if required -->
-                    <div class="col-lg-9 col-md-9 brandName">
-                        <a href="#"><h2><span class="brand"># Brand Name</span></h2></a>
+                    <div class="col-lg-11 col-md-11 brandName">
+                        <a href="#"><h2><span class="brand"><i class="fab fa-d-and-d"></i> Brand Name</span></h2></a>
                     </div>
-                    <div class="col-lg-3 col-md-3 userAuth">
+                    <div class="col-lg-1 col-md-1 userAuth">
                         <div class="login">
                             <a href="/login"><p>Login  <i class="fas fa-user"></i></p></a>
-                        </div>
-                        <div class="logout">
-                            <a href="#"><p>Logout   <i class="fas fa-user-minus"></i></p></a>
                         </div>
                     </div>
                 </div>
@@ -153,7 +150,7 @@
                     </div>
                     <div class="trendingBlogsBody content-padding">
                         <div class="authorOfBlog">
-                            <strong>Blog Heading</strong><em>  (<%= user %>)  </em>
+                            <strong><%= blogHeading %></strong><em>  (<%= user %>)  </em>
                             <hr>
                             <p class="Blog">
                                 <%= blog %>
