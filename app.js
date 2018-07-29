@@ -67,9 +67,17 @@ app.get("/signup", function(req,res)
 
 // logic for handling the user Signup
 app.post("/signup", function(req, res){
-    console.log(req.body);
-    res.render("show");
+    user.register(new user({username: req.body.email}),req.body.password,function(err,data){
+        if(err)
+        {
+            res.redirect("/")
+        }
+        else
+        res.render("show");
+    });
 });
+//logging in the user
+
 
 // =======================
 //     LOCAL HOST
