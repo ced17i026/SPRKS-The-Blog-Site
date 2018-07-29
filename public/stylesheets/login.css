@@ -1,0 +1,7 @@
+.container{
+    width: 40%;
+    padding-top: 2%;
+}
+.container .ui .field label{
+    font-size: 15px;
+}
