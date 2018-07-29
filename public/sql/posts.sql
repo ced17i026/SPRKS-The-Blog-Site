@@ -1,6 +1,7 @@
 create table posts(
     id int primary key auto_increment,
     user_id int not null,
+    blogHeading varchar(255) not null,
     posts varchar(255) not null,
     foreign key(user_id) references users(id)
 );

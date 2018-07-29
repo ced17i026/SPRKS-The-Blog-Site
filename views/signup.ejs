@@ -15,8 +15,8 @@
     <link rel="stylesheet" href="stylesheets/signup.css">
 </head>
 <body>
-    <div class="container">
-     <form class="ui form">
+    <div class="container"> 
+     <form method="POST" action="/signup" class="ui form">
           <h2 class="ui dividing header">Sign Up</h2>
           <div class="field">
             <label>Name</label>
@@ -37,9 +37,9 @@
           </div>
           <div class="field">
             <label for="password">Password</label>
-            <input type="password" name="password" placeholder="Password" id="password">
+            <input type="password" name="password" placeholder="password" id="password">
           </div>
-          <div class="ui button" tabindex="0">Submit</div>
+          <button class="ui button" tabindex="0">Submit</button>
         </form>
     </div>
 </body>

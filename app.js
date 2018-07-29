@@ -4,8 +4,11 @@
 
 var express = require("express"),
     mysql   = require("mysql"),
+    bodyParser = require("body-parser"),
+    faker   = require("faker"),
     app     = express();
 
+app.use(bodyParser.urlencoded({extended: true}));
 app.set("view engine", "ejs");
 app.use(express.static(__dirname + "/public"));
 
@@ -34,12 +37,23 @@ app.get("/", function(req,res){
     
     connection.end();
     });
+    
+    console.log(faker.name.firstName);
 });
+
+
 //getting the signup page route
 app.get("/signup", function(req,res)
 {
     res.render("signup");
-})
+});
+
+// logic for handling the user Signup
+app.post("/signup", function(req, res){
+    console.log(req.body);
+    console.log(md5(req.body.password));
+    res.render("show");
+});
 
 // =======================
 //     LOCAL HOST
@@ -50,7 +64,7 @@ app.listen(process.env.PORT,process.env.IP, function(){
 });
 
 
-// Uncomment the below code and comment the above to execute
+// Uncomment the below code and comment the above to execute on the local computer
 // app.listen(8080, function(){
 //     console.log("App listening ...");
 // });
